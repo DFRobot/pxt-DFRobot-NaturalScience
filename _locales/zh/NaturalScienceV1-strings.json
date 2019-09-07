@@ -1,0 +1,21 @@
+{
+    "NaturalScience.getC|block": "自然光线",
+    "NaturalScience.getRed|block": "红色值",
+    "NaturalScience.getGreen|block": "绿色值",
+    "NaturalScience.getBlue|block": "蓝色值",
+    "NaturalScience.setLed|block": "设置LED灯 %parms",
+    "NaturalScience.getK|block": "获取TDS电极常数K",
+    "NaturalScience.setK|block": "设置TDS电极常数K %value",
+    "NaturalScience.getUV|block": "紫外线强度（mW/cm2）",
+    "NaturalScience.getTDS|block": "TDS（PPM）",
+    "NaturalScience.getNoise|block": "声音强度",
+    "NaturalScience.BME280Data.Pressure|block": "大气压强(Kpa)",
+    "NaturalScience.BME280Data.Temperature|block": "环境温度(℃)",
+    "NaturalScience.BME280Data.Humidity|block": "环境湿度(RH)",
+    "NaturalScience.readBME280Data|block": "获取 %data",
+    "NaturalScience.showUserNumber|block": "OLED 显示屏 第%line行|显示数字%n",
+    "NaturalScience.showUserText|block": "OLED 显示屏 第%line行|显示文本%text",
+    "NaturalScience.clear|block": "OLED清屏",
+    "NaturalScience.TemperatureNumber|block": "水温(℃)",
+    "NaturalScience.initDisplay|block": "初始化OLED屏幕"
+}
