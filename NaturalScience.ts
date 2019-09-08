@@ -223,8 +223,8 @@ namespace NaturalScience {
     export function getNoise(): number {
         let ret1 = readReg(STM32_ADDRESS, REG_SEM32_NOISE_H);
         let ret2 = readReg(STM32_ADDRESS, REG_STM32_NOISE_L);
-       
-        return (((ret1 << 8) | ret2) / 4096) * 1024;
+        let x= Math.round((((ret1 << 8) | ret2) / 4096) * 1024);
+        return x;
     }
 
 
