@@ -223,7 +223,7 @@ namespace NaturalScience {
     export function getNoise(): number {
         let ret1 = readReg(STM32_ADDRESS, REG_SEM32_NOISE_H);
         let ret2 = readReg(STM32_ADDRESS, REG_STM32_NOISE_L);
-        let x= Math.round((((ret1 << 8) | ret2) / 4096) * 1024);
+        let x = Math.round((((ret1 << 8) | ret2) / 4096) * 1024);
         return x;
     }
 
@@ -306,7 +306,7 @@ namespace NaturalScience {
     //OLED
     //% weight=200
     //% block="initDisplay"
-    
+
     export function initDisplay(): void {
         cmd(0xAE);  // Set display OFF
         cmd(0xD5);  // Set Display Clock Divide Ratio / OSC Frequency 0xD4
@@ -339,7 +339,7 @@ namespace NaturalScience {
     export function clear() {
         //cmd(DISPLAY_OFF);   //display off
         for (let j = 0; j < 8; j++) {
-            setText(j,0);
+            setText(j, 0);
             {
                 for (let i = 0; i < 16; i++)  //clear all columns
                 {
@@ -348,10 +348,10 @@ namespace NaturalScience {
             }
         }
         //cmd(DISPLAY_ON);    //display on
-        setText(0,0);
+        setText(0, 0);
     }
 
-   
+
     function setText(row: number, column: number) {
         let r = row;
         let c = column;
@@ -379,12 +379,12 @@ namespace NaturalScience {
     //% block="OLED show line %line|text %text"
     export function showUserText(line: number, text: string) {
 
-        setText(line,0);
+        setText(line, 0);
         for (let c of text) {
             putChar(c);
         }
-        
-        for (let i = text.length ; i < 16 ;i++) {
+
+        for (let i = text.length; i < 16; i++) {
             setText(line, i);
             putChar(" ");
         }
@@ -575,6 +575,7 @@ namespace NaturalScience {
             temp = Temperature(13);
             basic.pause(1);
         }
-        return temp / 100;
+        let x = Math.round(temp / 100);
+        return x;
     }
 }
