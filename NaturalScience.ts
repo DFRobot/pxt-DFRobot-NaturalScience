@@ -570,12 +570,15 @@ namespace NaturalScience {
     //% block="get tempN"
     export function TemperatureNumber(): number {
         // Fake function for simulator
+        let x;
         let temp = Temperature(13);
-        while (temp > 12500) {
-            temp = Temperature(13);
-            basic.pause(1);
+        if (temp > 12500) {
+            //temp = Temperature(13);
+            //basic.pause(1);
+            x = 0;
+        } else {
+            x = Math.round(temp / 100);
         }
-        let x = Math.round(temp / 100);
         return x;
     }
 }
