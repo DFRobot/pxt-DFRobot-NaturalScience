@@ -76,7 +76,8 @@ namespace NaturalScience {
     //% weight=60 
     export function getRed(): number {
         getRGBC();
-        return (Math.round(TCS34725_RGBC_R) / Math.round(TCS34725_RGBC_C)) * 255;
+        let red = (Math.round(TCS34725_RGBC_R) / Math.round(TCS34725_RGBC_C)) * 255;
+        return Math.round(red);
     }
 
     /**
@@ -86,7 +87,8 @@ namespace NaturalScience {
     //% weight=60 
     export function getGreen(): number {
         getRGBC();
-        return (Math.round(TCS34725_RGBC_G) / Math.round(TCS34725_RGBC_C)) * 255;
+        let green = (Math.round(TCS34725_RGBC_G) / Math.round(TCS34725_RGBC_C)) * 255;
+        return Math.round(green);
     }
 
     /**
@@ -96,7 +98,8 @@ namespace NaturalScience {
     //% weight=60 
     export function getBlue(): number {
         getRGBC();
-        return (Math.round(TCS34725_RGBC_B) / Math.round(TCS34725_RGBC_C)) * 255;
+        let blue = (Math.round(TCS34725_RGBC_B) / Math.round(TCS34725_RGBC_C)) * 255;
+        return Math.round(blue)
     }
 
     /**
