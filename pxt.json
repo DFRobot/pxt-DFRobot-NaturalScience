@@ -10,7 +10,7 @@
     "files": [
         "README.md",
         "NaturalScience.ts",
-        "_locales/zh/NaturalScienceV1-strings.json",
+        "_locales/zh/NaturalScience-strings.json",
         "ds18b20.cpp"
     ],
     "testFiles": [
