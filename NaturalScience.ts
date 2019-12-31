@@ -1,4 +1,7 @@
-//% color="#AA278D" height=100  block="NaturalScience"
+/**
+ * This is a microbit-based theme expansion board.
+ */
+//% color="#AA278D" height=100 icon="\uf185" block="NaturalScience"
 namespace NaturalScience {
     /**
     * TCS34725: Color recognition sensor related register variable definition
@@ -145,7 +148,9 @@ namespace NaturalScience {
         buf[1] = dat;
         pins.i2cWriteBuffer(addr, buf)
     }
-
+    /**
+     * LED switch
+     */
     //% block="set Led %parms"
     //% weight=69
     export function setLed(parms: STM32_LED_STATUS) {
@@ -306,7 +311,9 @@ namespace NaturalScience {
         //% block="Humidity"
         Humidity
     }
-    //OLED
+    /**
+     * Init display
+     */
     //% weight=200
     //% block="initDisplay"
 
@@ -336,6 +343,9 @@ namespace NaturalScience {
         cmd(0xAF);  // Set display On
         clear();
     }
+    /**
+     * Clear display
+     */
     //% weight=85
     //% blockId=OLED_Clear
     //% block="ClearDisplay"
@@ -374,7 +384,7 @@ namespace NaturalScience {
         writeCustomChar(basicFont[c1 - 32]);
     }
     /**
-     * OLED 12864 display string
+     * OLED 12864 shows the string
      */
     //% weight=90
     //% blockId=OLED_String
@@ -524,8 +534,6 @@ namespace NaturalScience {
         "\x00\x41\x36\x08\x00\x00\x00\x00", // "}"
         "\x00\x02\x01\x01\x02\x01\x00\x00"  // "~"
     ];
-
-    //OLED
 
     /**
      *  Get the pressure, temperature, and humidity of the BME280 sensor
