@@ -75,7 +75,7 @@ namespace NaturalScience {
     /**
      * Get the red component of the TCS34725 color sensor
      */
-    //% block="Get red"
+    //% block="get red"
     //% weight=60 
     export function getRed(): number {
         getRGBC();
@@ -86,7 +86,7 @@ namespace NaturalScience {
     /**
      * Get the green component of the TCS34725 color sensor
      */
-    //% block="Get green"
+    //% block="get green"
     //% weight=60 
     export function getGreen(): number {
         getRGBC();
@@ -97,7 +97,7 @@ namespace NaturalScience {
     /**
      * Get the blue component of the TCS34725 color sensor
      */
-    //% block="Get blue"
+    //% block="get blue"
     //% weight=60 
     export function getBlue(): number {
         getRGBC();
@@ -108,7 +108,7 @@ namespace NaturalScience {
     /**
      *  Get the natural light value of the TCS34725 color sensor
      */
-    //% block="Get light"
+    //% block="get light"
     //% weight=60 
     export function getC(): number {
         getRGBC();
@@ -315,7 +315,7 @@ namespace NaturalScience {
      * Init display
      */
     //% weight=200
-    //% block="initDisplay"
+    //% block="init display"
 
     export function initDisplay(): void {
         cmd(0xAE);  // Set display OFF
@@ -348,7 +348,7 @@ namespace NaturalScience {
      */
     //% weight=85
     //% blockId=OLED_Clear
-    //% block="ClearDisplay"
+    //% block="clear display"
     export function clear() {
         //cmd(DISPLAY_OFF);   //display off
         for (let j = 0; j < 8; j++) {
