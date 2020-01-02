@@ -1,13 +1,15 @@
-# MBT0013 micronatural & science 
+# MBT0013 Environment Science Board for micro: bit
 
-This is a microbit-based theme expansion board. The theme is natural science. Through the vivid logo and interesting theme features, the expansion board becomes a knowledgeable and interesting multimedia teaching tool. In the teaching process, it is very easy to transition from the natural environment knowledge point to the knowledge detection, program programming and other knowledge points.
+This is a micro:bit-based expansion board with the theme of environment and science. On a wide and easy-to-use PCB, it integrates many sensor modules of nature and science, including UV sensor, temperature sensor, humidity sensor, air pressure sensor, sound sensor, color sensor, light sensor, water temperature sensor, TDS water quality sensor, buzzer, OLED display, etc.
+This board is rich in knowledge, suitable for a wide range of applications. Extended GPIOs are set and it is designed to be compatible with DFRobot gravity series.
+Students can use this board to explore the secret of nature by detecting and collecting various nature data, and learn something about the environment and science. 
 
 [Expansion board configuration: atmospheric pressure, temperature, humidity, color, sound, light, water quality, OLED screen as data display, using makecode graphical programming](https://www.dfrobot.com/product-1948.html?search=MBT0013&description=true)
 
 
 ## Basic usage
 
-* Initializes the display, showing DFRobot on the first line and 2019 on the second line.
+* Initialize the display, and show DFRobot on the first line and 2019 on the second line.
 
 ```blocks
 NaturalScience.initDisplay()
