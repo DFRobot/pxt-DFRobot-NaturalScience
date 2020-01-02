@@ -157,8 +157,6 @@ namespace NaturalScience {
         writeReg(STM32_ADDRESS, REG_SEM32_LED_CONTROL, parms)
     }
 
-
-
     /**
      * Obtain the UV intensity of the UV sensor (mW/cm2)
      */
@@ -389,6 +387,7 @@ namespace NaturalScience {
     //% weight=90
     //% blockId=OLED_String
     //% text.defl="DFRobot"
+    //% line.min=0 line.max=7
     //% block="OLED show line %line|text %text"
     export function showUserText(line: number, text: string) {
 
@@ -409,6 +408,7 @@ namespace NaturalScience {
      */
     //% weight=90
     //% blockId=OLED_number
+    //% line.min=0 line.max=7
     //% block="OLED show line %line|number %n"
     export function showUserNumber(line: number, n: number) {
 
