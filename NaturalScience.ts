@@ -1,5 +1,5 @@
 /**
- * This is a microbit-based theme expansion board.
+ * This is a micro:bit-based expansion board.
  */
 //% color="#AA278D" height=100 icon="\uf185" block="NaturalScience"
 namespace NaturalScience {
@@ -73,7 +73,7 @@ namespace NaturalScience {
     }
 
     /**
-     * Get the red component of the TCS34725 color sensor
+     * Get the red value from the TCS34725 color sensor
      */
     //% block="get red"
     //% weight=60 
@@ -84,7 +84,7 @@ namespace NaturalScience {
     }
 
     /**
-     * Get the green component of the TCS34725 color sensor
+     * Get the green value from the TCS34725 color sensor
      */
     //% block="get green"
     //% weight=60 
@@ -95,7 +95,7 @@ namespace NaturalScience {
     }
 
     /**
-     * Get the blue component of the TCS34725 color sensor
+     * Get the blue value from the TCS34725 color sensor
      */
     //% block="get blue"
     //% weight=60 
@@ -108,7 +108,7 @@ namespace NaturalScience {
     /**
      *  Get the natural light value of the TCS34725 color sensor
      */
-    //% block="get light"
+    //% block="get natural light"
     //% weight=60 
     export function getC(): number {
         getRGBC();
@@ -151,7 +151,7 @@ namespace NaturalScience {
     /**
      * LED switch
      */
-    //% block="set Led %parms"
+    //% block="turn the Led %parms"
     //% weight=69
     export function setLed(parms: STM32_LED_STATUS) {
         writeReg(STM32_ADDRESS, REG_SEM32_LED_CONTROL, parms)
@@ -177,9 +177,9 @@ namespace NaturalScience {
     }
 
     /**
-     * Get the K value of the TDS sensor
+     * Get the cell constant K of the TDS sensor
      */
-    //% block="get TDS K Value"
+    //% block="get TDS cell constant K"
     //% weight=70
     export function getK(): string {
         let ret1 = readReg(STM32_ADDRESS, REG_STM32_K_INTEGER);
@@ -194,9 +194,9 @@ namespace NaturalScience {
     }
 
     /**
-     * Set the K value of the TDS sensor
+     * Set the cell constant K of the TDS sensor
      */
-    //% block="set TDS K %value"
+    //% block="set TDS cell constant K %value"
     //% weight=70 value.defl=2.68
     export function setK(value: number) {
 
@@ -224,7 +224,7 @@ namespace NaturalScience {
     /**
      * Get sound intensity
      */
-    //% block="get noise"
+    //% block="get sound intensity"
     //% weight=70
     export function getNoise(): number {
         let ret1 = readReg(STM32_ADDRESS, REG_SEM32_NOISE_H);
@@ -388,7 +388,7 @@ namespace NaturalScience {
     //% blockId=OLED_String
     //% text.defl="DFRobot"
     //% line.min=0 line.max=7
-    //% block="OLED show line %line|text %text"
+    //% block="OLED show text %text|on line %line"  
     export function showUserText(line: number, text: string) {
 
         setText(line, 0);
@@ -409,7 +409,7 @@ namespace NaturalScience {
     //% weight=90
     //% blockId=OLED_number
     //% line.min=0 line.max=7
-    //% block="OLED show line %line|number %n"
+    //% block="OLED show number %n| on line %line"
     export function showUserNumber(line: number, n: number) {
 
         NaturalScience.showUserText(line, "" + n)
