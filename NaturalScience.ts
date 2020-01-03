@@ -177,9 +177,9 @@ namespace NaturalScience {
     }
 
     /**
-     * Get the cell constant K of the TDS sensor
+     * Get the K value of the TDS sensor
      */
-    //% block="get TDS cell constant K"
+    //% block="get K"
     //% weight=70
     export function getK(): string {
         let ret1 = readReg(STM32_ADDRESS, REG_STM32_K_INTEGER);
@@ -194,9 +194,9 @@ namespace NaturalScience {
     }
 
     /**
-     * Set the cell constant K of the TDS sensor
+     * Set the K value of the TDS sensor
      */
-    //% block="set TDS cell constant K %value"
+    //% block="set K to %value"
     //% weight=70 value.defl=2.68
     export function setK(value: number) {
 
@@ -575,7 +575,7 @@ namespace NaturalScience {
     }
 
     /**
-     * Get the temperature of the water
+     * Get the water temperature 
      */
     //% weight=80 blockId="get temp" 
     //% block="get tempN"
