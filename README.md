@@ -1,4 +1,4 @@
-# MBT0013 Environment Science Board for micro: bit
+# MBT0013 Environment Science Board for micro:bit
 
 This is a micro:bit-based expansion board with the theme of environment and science. On a wide and easy-to-use PCB, it integrates many sensor modules of nature and science, including UV sensor, temperature sensor, humidity sensor, air pressure sensor, sound sensor, color sensor, light sensor, water temperature sensor, TDS water quality sensor, buzzer, OLED display, etc.
 This board is rich in knowledge, suitable for a wide range of applications. Extended GPIOs are set and it is designed to be compatible with DFRobot gravity series.
