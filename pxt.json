@@ -10,7 +10,9 @@
         "README.md",
         "NaturalScience.ts",
         "_locales/zh/NaturalScience-strings.json",
-        "ds18b20.cpp"
+        "ds18b20.cpp",
+        "shims.d.ts",
+        "enums.d.ts"
     ],
     "testFiles": [
         "test.ts"
